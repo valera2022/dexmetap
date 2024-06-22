@@ -2,15 +2,15 @@ import React from 'react'
 import { useState } from 'react'
 import logo from "../logo.png"
 import "./paramsform.css"
-import { safe } from '../safe'
+// import { safe } from '../safe'
 
 import Result from '../Result/Result'
 
-export default function () {
+export default function ParamForm () {
     const [clase,setClase] = useState(null)
     const [metal,setMetal] = useState(null)
     const [toggle,setToggle] = useState(false)
-    const [nivel,setNivel] = useState("")
+    // const [nivel,setNivel] = useState("")
    
     // const [claseB,setClaseB] = useState("B")
     // const [claseC,setClaseC] = useState("C")
@@ -35,7 +35,7 @@ export default function () {
 
   return (
     <div>
-        <img width={200} height={200} src={logo}/>
+        <img width={200} height={200} alt="imagen" src={logo}/>
         <div className='formula'>
         <form action="/action_page.php" >
             <label for="cars" >Tipo de Agua</label>

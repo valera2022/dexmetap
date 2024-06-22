@@ -1,16 +1,16 @@
 import React from 'react'
 import { datos } from '../datos'
-import { useState } from 'react'
+
 import "./result.css"
 import Metal from '../Metal/Metal'
 
     
 
 
-export default function ({clase,metal}) {
+export default function Result ({clase,metal}) {
     console.log(clase)
     // const [about,setAbout] = useState("")
-    const tipo = ["A","B","C","D","E","F","G"]
+ 
     let about
 
     if(clase && metal ){
