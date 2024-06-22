@@ -21,7 +21,8 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "lint": "eslint src --max-warnings=0"
   },
   "browserslist": {
     "production": [
