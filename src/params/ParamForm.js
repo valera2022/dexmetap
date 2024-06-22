@@ -34,8 +34,8 @@ export default function ParamForm () {
     
 
   return (
-    <div>
-        <img width={200} height={200} alt="imagen" src={logo}/>
+    <div className='formContainer'>
+        <img className='imagen' width={100} height={200} alt="imagen" src={logo}/>
         <div className='formula'>
         <form action="/action_page.php" >
             <label for="cars" >Tipo de Agua</label>
