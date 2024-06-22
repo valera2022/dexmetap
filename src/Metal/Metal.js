@@ -14,6 +14,7 @@ export default function Metal({clase,metal}) {
     function closeModal(){
         
         popRef.current.close()
+        window.location.reload();
 
     }
 
@@ -56,7 +57,8 @@ export default function Metal({clase,metal}) {
     
     <div className='dialog'>
         <dialog ref={popRef}>
-             { clase && metal? <p>{about}</p> : <p>Elige Agua y Metal</p> }
+
+             { clase && metal? <div> <h2>Medidas Aceptables de Metal</h2> <h3>{about.title}</h3> {about.aguas.map((agua)=><div><li>{agua}</li> </div>)} <p>La Clase D no se incluye en la Tabla porque todos sus parámetros deben cumplir condiciones naturales.</p> </div> : <p>Elige Agua y Metal</p> }
              <button onClick={closeModal} className='cancel-pledge'>Cerrar</button>
        </dialog>  
        

@@ -14,28 +14,26 @@ export const datos = {
 
 
 export const metalDatos= {
-    cromo: `En aguas residuales superficiales de clase A y B el nivel maximo aceptable por la secretaria de estado de medio ambiente y recursos naturales es de 0.05 mg/L.  Para las aguas superficiales de clase C la presencia aceptable es de 1.00 mg/L o menos cualquier medida superior a esta pasa los limites aceptaos por la secretaria de estado de medio ambiente y recursos naturales. Para las aguas costeras de clase E el máximo nivel aceptable de cromo total es de 0.10 mg/L según la secretaria de estado de medio ambiente y recursos naturales.
+    cromo: {title:"Cromo",
+            aguas:["Aguas residuales de clase A ------ 0.05 mg/L ", "Aguas residuales de clase B ------ 0.05 mg/L","Aguas residuales de clase C ------ 1.00 mg/L ","Aguas residuales de clase E ------ 0.10 mg/L ","Aguas residuales de clase F ------ 0.30 mg/L ","Aguas residuales de clase G ------ 0.30 mg/L "]
+           },
 
-             Mientras que para las aguas de clase F y G el máximo aceptable es de 0.30 mg/L cualquier medida superior en esas clases de agua no es aceptada por la secretaria de estado de medio ambiente y recursos naturales de la Republica Dominicana`,
-    cadmio:`La medida aceptable de cadmio en las aguas residuales superficiales de la Republica Dominicana es de 0.005 mg/L en las clases A y B, cualquier medida superior no es aceptada por la secretaria de estado de medio ambiente y recursos naturales. Mientras que para las aguas de clase C la medida máxima aceptable es de 0.05mg/L. Para las aguas costeras de clase E, F y G la medida aceptable es de 0.005 mg/L en cada una de ellas según datos de la secretaria de estado de medio ambiente y recursos naturales.`,
-    cobre:`La medida aceptable de cadmio en las aguas residuales superficiales de la Republica Dominicana es de 0.20 mg/L en las clases A y B, cualquier medida superior no es aceptada por la secretaria de estado de medio ambiente y recursos naturales.
-           Mientras que para las aguas de clase C la medida máxima aceptable es de 2.00
-           mg/L. Para las aguas costeras de clase E y F  la medida aceptable es de 0.050 mg/L en cada una de ellas (en las aguas de clase G no hay presencia de cobre)  según datos de la secretaria de estado de medio ambiente y recursos naturales.`,
-    plomo:`
-La medida aceptable de cadmio en las aguas residuales superficiales de la Republica Dominicana es de 0.05 mg/L en las clases A y B, cualquier medida superior no es aceptada por la secretaria de estado de medio ambiente y recursos naturales.
+    cadmio:{title:"Cadmio",
 
-Mientras que para las aguas de clase C la medida máxima aceptable es de 0.50
- mg/L. 
-
-Para las aguas costeras de clase E y F  la medida aceptable es de 0.05 mg/L en cada una de ellas (en las aguas de clase G no hay presencia de cobre)  según datos de la secretaria de estado de medio ambiente y recursos naturales.
-`,
-    zinc:`La medida aceptable de cadmio en las aguas residuales superficiales de la Republica Dominicana es de 0.05 mg/L en las clases A y B, cualquier medida superior no es aceptada por la secretaria de estado de medio ambiente y recursos naturales.
-
-Mientras que para las aguas de clase C la medida máxima aceptable es de 0.10
- mg/L. 
-
+           aguas:["Aguas residuales de clase A ------ 0.005 mg/L ","Aguas residuales de clase B ------ 0.005 mg/L ","Aguas residuales de clase C ------ 0.05 mg/L ","Aguas residuales de clase E ------ 0.005 mg/L ","Aguas residuales de clase F ------ 0.005 mg/L ","Aguas residuales de clase G ------ 0.005 mg/L "]
+           },
+    cobre:{title:"Cobre",
+           aguas:["Aguas residuales de clase A ------ 0.20 mg/L ","Aguas residuales de clase B ------ 0.20 mg/L ","Aguas residuales de clase C ------ 2.00 mg/L ","Aguas residuales de clase E ------ 0.050 mg/L","Aguas residuales de clase F ------ 0.050 mg/L ","Aguas residuales de clase G ------ No presente "]
+         },
+    plomo:{title:"Plomo",
+        aguas:["Aguas residuales de clase A ------ 0.05 mg/L ","Aguas residuales de clase B ------ 0.05 mg/L ","Aguas residuales de clase C ------ 0.50 mg/L ","Aguas residuales de clase E ------ 0.05 mg/L ","Aguas residuales de clase F ------ 0.05 mg/L ","Aguas residuales de clase G ------ No presente "],
+        },
+        zinc:{title:"Zinc",
+            aguas:["Aguas residuales de clase A ------ 0.05 mg/L ","Aguas residuales de clase B ------ 0.05 mg/L ","Aguas residuales de clase C ------ 0.10 mg/L ","Aguas residuales de clase E ------ 0.05 mg/L ","Aguas residuales de clase F ------ 0.05 mg/L ","Aguas residuales de clase G ------ No presente "]
+        }
+   
 
 
-Para las aguas costeras de clase E y F la medida aceptable es de 0.05 mg/L en cada una de ellas (en las aguas de clase G no hay presencia de cobre) según datos de la secretaria de estado de medio ambiente y recursos naturales.
-`,
-    }
+
+
+}

@@ -74,7 +74,7 @@ export default function () {
         <br/>
 
   {/* <input type="su" value="Submit"/> */}
-  <button onClick={handleClick}>Buscar</button>
+  <button id="buscar" onClick={handleClick}>Buscar</button>
 </form>
 </div>
 
