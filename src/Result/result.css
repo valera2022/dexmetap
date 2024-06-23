@@ -1,21 +1,31 @@
 .result{
     margin-left: 400px;
-    max-width: 400px;
-    height: 150px;
+    max-width: 390px;
+    height: 180px;
     overflow: auto ;
     border:solid;
     border-width: thin;
     color:rgb(50, 51, 51);
     font-weight: 680;
+    place-items: center;
+    border-radius: 10px;
+   
     /* container: grid; */
 
 }
 
 
 @media screen and (max-width: 500px) {
+    body {margin: 0;}
    
    .result{
     margin-left: -8px;
+   }
+   .resultado-son{
+    width: 390px;
+    /* background: rgb(94, 94, 92); */
+    height: 175px;
+    place-self: center;
    }
 
 }
