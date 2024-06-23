@@ -1,8 +1,14 @@
+.formContainer{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+
 .formula {
     font-family: "Open Sans", sans-serif;
     /* border: solid;
     border-color: red; */
-    width:420px;
+    max-width:420px;
     height:180px;
     margin-left: 400px;
     font-weight: 700;
@@ -15,7 +21,7 @@ label{
 }
 
 select{
-    width: 400px;
+    max-width: 400px;
     height: 40px;
     border-radius: 10px;
 }
@@ -30,21 +36,55 @@ button{
     border-width: thin;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
 
     .formula {
         font-family: "Open Sans", sans-serif;
         /* border: solid;
         border-color: red; */
-        width:100%;
+        max-width:100%;
         height:100%;
         margin-left: -10px;
         font-weight: 700;
+     
         
     
     }
 
-    .imagen{
-        /* margin-top: -10px; */
+    .select{
+        max-width: 70%;
+    }
+
+    
+
+    .img{
+        max-width: 100%;
+        /* margin-top: -10px;
+       border-radius: 100px; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .formula {
+        font-family: "Open Sans", sans-serif;
+        /* border: solid;
+        border-color: red; */
+        max-width:90%;
+        height:100%;
+        /* margin-left: -10px; */
+        font-weight: 700;
+        place-self: center;
+     
+        
+    
+    }
+
+    
+
+    .img{
+        max-width: 100%;
+        /* margin-top: -10px;
+       border-radius: 100px; */
     }
 }

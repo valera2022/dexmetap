@@ -13,6 +13,14 @@ code {
     monospace;
 }
 
+html{
+  box-sizing: border-box;
+}
+
+*,*:before, *:after{
+  box-sizing: inherit;
+}
+
 /* @media screen and (max-width: 430px) {
   body{
     width: 100%;
