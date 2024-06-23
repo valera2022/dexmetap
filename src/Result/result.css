@@ -12,20 +12,10 @@
 }
 
 
-@media screen and (max-width: 500px) {
-    .result{
-        
-        /* width: 400px; */
-        height: 150px;
-        overflow: auto ;
-        border:solid;
-        border-width: thin;
-        color:rgb(50, 51, 51);
-        font-weight: 800;
-    
-    }
+/* @media screen and (max-width: 500px) {
+   
     .resultado-son{
         place-self: center;
     }
 
-}
+} */
