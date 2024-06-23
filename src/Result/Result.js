@@ -58,7 +58,7 @@ export default function Result ({clase,metal}) {
   return (
     
     <div className='result'>
-       { clase && about?<div> <p>{about}</p> <Metal clase={clase} metal={metal}/></div> : <p>Elige Agua y Metal</p> }
+       { clase && about?<div className='resultado-son'> <p>{about}</p> <Metal clase={clase} metal={metal}/></div> : <p>Elige Agua y Metal</p> }
             
         </div>
   )
