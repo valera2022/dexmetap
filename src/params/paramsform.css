@@ -95,6 +95,7 @@ button{
 
     .img{
         max-width: 100%;
+        object-fit: fill;
         /* margin-top: -10px;
        border-radius: 100px; */
     }
