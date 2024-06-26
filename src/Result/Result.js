@@ -7,7 +7,7 @@ import Metal from '../Metal/Metal'
     
 
 
-export default function Result ({clase,metal}) {
+export default function Result ({clase,metal,isSafe,nivel}) {
     console.log(clase)
     // const [about,setAbout] = useState("")
  
@@ -53,13 +53,22 @@ export default function Result ({clase,metal}) {
         
 
     }
+  
+  if(clase && metal && nivel){
+    return (
+    
+        <div className='result'>
+           
+            {isSafe(clase,metal,nivel) === true ?  <p id="normal">El nivel de {metal} es normal</p>:<p id="anormal"> El nivel de {metal} es Anormal</p>}
+           { clase && about && nivel?<div className='resultado-son'> <p>{about}</p> <Metal clase={clase} metal={metal}/></div> : <p>Elige Agua y Metal</p> }
+                
+            </div>
+      )
 
-    
-  return (
-    
-    <div className='result'>
-       { clase && about?<div className='resultado-son'> <p>{about}</p> <Metal clase={clase} metal={metal}/></div> : <p>Elige Agua y Metal</p> }
-            
-        </div>
-  )
+  }
+
+  else{
+    return <div className='noparams'><p>Inserta Todos los parametreos</p></div>
+  }
+  
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import logo from "../logo.png"
 import "./paramsform.css"
+import useSafe from '../hooks/useSafe'
 // import { safe } from '../safe'
 
 import Result from '../Result/Result'
@@ -10,7 +11,8 @@ export default function ParamForm () {
     const [clase,setClase] = useState(null)
     const [metal,setMetal] = useState(null)
     const [toggle,setToggle] = useState(false)
-    // const [nivel,setNivel] = useState("")
+    const [nivel,setNivel] = useState()
+    const {isSafe} = useSafe("")
    
     // const [claseB,setClaseB] = useState("B")
     // const [claseC,setClaseC] = useState("C")
@@ -20,12 +22,18 @@ export default function ParamForm () {
     // const [claseG,setClaseG] = useState("G")
     console.log(clase)
     console.log(metal)
+    console.log(typeof(nivel))
+    console.log(nivel)
 
 
 
     function handleClick(e){
         e.preventDefault()
+        e.stopPropagation()
         setToggle(!toggle)
+       
+        // isSafe(clase,metal,nivel)
+      
       
      
         
@@ -41,7 +49,8 @@ export default function ParamForm () {
         <form action="/action_page.php" >
             <label for="cars" >Tipo de Agua</label>
             <br/>
-          <select name="clases" id="clases"  onChange={((e)=> setClase(e.target.value))} value={clase} >
+          <select name="clases" id="clases"  onChange={((e)=> {   e.stopPropagation()
+             setClase(e.target.value)})} value={clase} >
           <option disabled selected value> -- Elige una Opcion -- </option>
             <option value="A">Clase A</option>
             <option value="B">Clase B</option>
@@ -70,8 +79,13 @@ export default function ParamForm () {
 
 
         </select>
-        {/* <label>Cantidad de Metal por litro</label>
-        <input type="number" placeholder='0.00' value={nivel} onChange={(e)=> setNivel(e.target.value) }/> */}
+        <br/>
+        <label>Metal en Microgramos por litro</label>
+        <br/>
+        <input type="number"  min="0"  placeholder=''  value={nivel} onChange={(e)=>{
+          //  let round = Math.round;
+          //  let x = round(e.target.value);
+            setNivel(()=>parseInt(e.target.value)) }}/>
         <br/>
 
   {/* <input type="su" value="Submit"/> */}
@@ -79,7 +93,7 @@ export default function ParamForm () {
 </form>
 </div>
 
-     {toggle? <div><Result metal={metal} clase={clase}/> <safe/> </div> : null }
+     {toggle ? <div><Result metal={metal} clase={clase} isSafe={isSafe} nivel={nivel}/> <safe/> </div> : null }
     </div>
   )
 }

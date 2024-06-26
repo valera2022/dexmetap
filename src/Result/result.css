@@ -14,6 +14,35 @@
     /* container: grid; */
 
 }
+#normal{
+    color: blue;
+    font-size: medium;
+}
+#anormal{
+    color: red;
+    font-size: medium;
+}
+
+.noparams{
+
+    max-width: 440px;
+    height: 60px;
+    overflow: auto ;
+    /* border:solid;
+    border-width: thin; */
+    font-weight: 680;
+    place-items: center;
+    border-radius: 10px;
+    background-color: rgb(244, 245, 247);
+    align-items: center;
+    
+    
+}
+
+.noparams>p{
+    color: red;
+ 
+}
 
 
 @media screen and (max-width: 500px) {

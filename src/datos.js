@@ -15,21 +15,21 @@ export const datos = {
 
 export const metalDatos= {
     cromo: {title:"Cromo",
-            aguas:["Aguas residuales de clase A ------ 0.05 mg/L ", "Aguas residuales de clase B ------ 0.05 mg/L","Aguas residuales de clase C ------ 1.00 mg/L ","Aguas residuales de clase E ------ 0.10 mg/L ","Aguas residuales de clase F ------ 0.30 mg/L ","Aguas residuales de clase G ------ 0.30 mg/L "]
+            aguas:["Aguas residuales de clase A: 50 µg/L", "Aguas residuales de clase B: 50 µg/L","Aguas residuales de clase C: 1000 µg/L","Aguas residuales de clase E: 100 µg/L","Aguas residuales de clase F: 300 µg/L ","Aguas residuales de clase G: 300 µg/L"]
            },
 
     cadmio:{title:"Cadmio",
 
-           aguas:["Aguas residuales de clase A ------ 0.005 mg/L ","Aguas residuales de clase B ------ 0.005 mg/L ","Aguas residuales de clase C ------ 0.05 mg/L ","Aguas residuales de clase E ------ 0.005 mg/L ","Aguas residuales de clase F ------ 0.005 mg/L ","Aguas residuales de clase G ------ 0.005 mg/L "]
+           aguas:["Aguas residuales de clase A: 5 µg/L ","Aguas residuales de clase B: 5 µg/L","Aguas residuales de clase C: 50 µg/L","Aguas residuales de clase E: 5 µg/L","Aguas residuales de clase F: 5 µg/L ","Aguas residuales de clase G: 5 µg/L "]
            },
     cobre:{title:"Cobre",
-           aguas:["Aguas residuales de clase A ------ 0.20 mg/L ","Aguas residuales de clase B ------ 0.20 mg/L ","Aguas residuales de clase C ------ 2.00 mg/L ","Aguas residuales de clase E ------ 0.050 mg/L","Aguas residuales de clase F ------ 0.050 mg/L ","Aguas residuales de clase G ------ No presente "]
+           aguas:["Aguas residuales de clase A: 200 µg/L ","Aguas residuales de clase B: 200 µg/L "," Aguas residuales de clase C: 2000 µg/L ","Aguas residuales de clase E: 50 µg/L","Aguas residuales de clase F: 50 µg/L","Aguas residuales de clase G: No presente "]
          },
     plomo:{title:"Plomo",
-        aguas:["Aguas residuales de clase A ------ 0.05 mg/L ","Aguas residuales de clase B ------ 0.05 mg/L ","Aguas residuales de clase C ------ 0.50 mg/L ","Aguas residuales de clase E ------ 0.05 mg/L ","Aguas residuales de clase F ------ 0.05 mg/L ","Aguas residuales de clase G ------ No presente "],
+        aguas:["Aguas residuales de clase A: 50 µg/L ","Aguas residuales de clase B: 50 µg/L ","Aguas residuales de clase C: 500 µg/L ","Aguas residuales de clase E: 50 µg/L ","Aguas residuales de clase F: 50 µg/L","Aguas residuales de clase G:  No presente "],
         },
         zinc:{title:"Zinc",
-            aguas:["Aguas residuales de clase A ------ 0.05 mg/L ","Aguas residuales de clase B ------ 0.05 mg/L ","Aguas residuales de clase C ------ 0.10 mg/L ","Aguas residuales de clase E ------ 0.05 mg/L ","Aguas residuales de clase F ------ 0.05 mg/L ","Aguas residuales de clase G ------ No presente "]
+            aguas:["Aguas residuales de clase A: 50 µg/L ","Aguas residuales de clase B: 50 µg/L","Aguas residuales de clase C: 100 µg/L ","Aguas residuales de clase E: 50 µg/L","Aguas residuales de clase F: 50 µg/L","Aguas residuales de clase G: No presente"]
         }
    
 

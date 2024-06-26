@@ -27,6 +27,14 @@ select{
     border-radius: 10px;
 }
 
+input{
+    max-width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: thin;
+
+}
+
 button{
     margin-top: 5px;
     width: 100px;
