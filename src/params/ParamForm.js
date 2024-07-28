@@ -55,7 +55,7 @@ export default function ParamForm () {
             <option value="A">Clase A</option>
             <option value="B">Clase B</option>
             <option value="C">Clase C</option>
-            <option value="D">Clase D</option>
+            {/* <option value="D">Clase D</option> */}
             <option value="E">Clase E</option>
             <option value="F">Clase F</option>
             <option value="G">Clase G</option>
