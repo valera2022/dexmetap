@@ -37,15 +37,19 @@ export default function useSafe() {
 
             
         }
-        else{return false}
+        // else{return false}
 
         if(metal ==="Cadmio"){
+            console.log(metal)
+            console.log(nivel)
             if(clase === "A" || clase === "B"){
               return   nivel <= 5 ? true : false
 
             }
            
             else if(clase === "C"){
+                console.log(nivel)
+                console.log(clase)
                 return   nivel <= 50 ? true : false
 
                 
@@ -65,7 +69,7 @@ export default function useSafe() {
 
             
         }
-        else{return false}
+        // else{return false}
 
         if(metal ==="Cobre"){
             if(clase === "A" ||  clase === "B"){
@@ -97,7 +101,7 @@ export default function useSafe() {
 
             
         }
-        else{return false}
+        // else{return false}
 
         
         if(metal ==="Plomo"){
@@ -130,7 +134,7 @@ export default function useSafe() {
 
             
         }
-        else{return false}
+        // else{return false}
         if(metal ==="Zinc"){
             if(clase === "A"  ||  clase === "B"){
               return   nivel <= 50 ? true : false
