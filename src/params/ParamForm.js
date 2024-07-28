@@ -97,7 +97,7 @@ export default function ParamForm () {
      {toggle ? <div><Result metal={metal} clase={clase} isSafe={isSafe} nivel={nivel}/> <safe/> </div> : null }
      {/* <a>Documento con mas detalles</a> */}
      <br></br>
-     <a href='https://docs.google.com/document/d/19u3VzUmeUEmL58wvQcVzrruqPiJ4Cg2y-dv8U1pjK-g/edit?usp=sharing'>Documento con Detalles</a>
+     <a href='https://docs.google.com/document/d/19u3VzUmeUEmL58wvQcVzrruqPiJ4Cg2y-dv8U1pjK-g/edit?usp=sharing'>Mas informacion</a>
      
     </div>
     
