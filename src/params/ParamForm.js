@@ -44,6 +44,7 @@ export default function ParamForm () {
   return (
     <div className='formContainer'>
           <div className='imagen'><img  width={200} height={200} alt="imagen" src={logo}/></div>
+          <h1>Dexmetap</h1>
         
         <div className='formula'>
         <form action="/action_page.php" >
@@ -88,12 +89,17 @@ export default function ParamForm () {
             setNivel(()=>parseInt(e.target.value)) }}/>
         <br/>
 
-  {/* <input type="su" value="Submit"/> */}
-  <button id="buscar" onClick={handleClick}>Buscar</button>
-</form>
-</div>
+     {/* <input type="su" value="Submit"/> */}
+     <button id="buscar" onClick={handleClick}>Buscar</button>
+       </form>
+    </div>
 
      {toggle ? <div><Result metal={metal} clase={clase} isSafe={isSafe} nivel={nivel}/> <safe/> </div> : null }
+     {/* <a>Documento con mas detalles</a> */}
+     <br></br>
+     <a href='https://docs.google.com/document/d/19u3VzUmeUEmL58wvQcVzrruqPiJ4Cg2y-dv8U1pjK-g/edit?usp=sharing'>Documento con Detalles</a>
+     
     </div>
+    
   )
 }
